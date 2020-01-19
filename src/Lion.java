@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.util.Random;
 
+//ERROR: class Lion threw an  exception in its constructor. I do not know why.
 
 public class Lion extends Critter {
 
