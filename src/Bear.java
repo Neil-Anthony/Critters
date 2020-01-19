@@ -3,6 +3,8 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 import java.awt.*;
 import java.util.Random;
 
+// DID THIS WORK
+
 public class Bear extends Critter {
     private Random rd = new Random();
     private boolean polar = rd.nextBoolean();
