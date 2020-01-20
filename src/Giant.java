@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Giant extends Critter {
     private int moves=1;
     public Giant() {
@@ -22,5 +24,10 @@ public class Giant extends Critter {
     public Action getMove(CritterInfo info){
         moves++;
     return super.getMove(info);
+    }
+
+    @Override
+    public Color getColor() {
+        return Color.GRAY;
     }
 }
