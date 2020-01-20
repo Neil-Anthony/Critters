@@ -2,6 +2,7 @@ import java.awt.*;
 
 public class Giant extends Critter {
     private int moves=1;
+
     public Giant() {
 
     }
@@ -22,11 +23,17 @@ public class Giant extends Critter {
 
 
     public Action getMove(CritterInfo info){
+        //always infect if an enemy is in front, otherwise hop if possible, otherwise turn right.
         moves++;
-    return super.getMove(info);
+        if(info.getFront()==Neighbor.OTHER){
+            return Action.INFECT;
+        } else if (info.getFront()==Neighbor.EMPTY){
+            return Action.HOP;
+        } else {
+            return Action.RIGHT;
+        }
     }
 
-    @Override
     public Color getColor() {
         return Color.GRAY;
     }
