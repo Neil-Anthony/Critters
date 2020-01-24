@@ -8,17 +8,18 @@ public class Giant extends Critter {
     }
 
     public String toString() {
-        if (moves > 33){
+        if (moves > 24){
             moves = 1;
         }
         if (moves <= 6 && moves >= 1){
             return "Fee";
         }
-        if (moves >=7 && moves <= 19){
+        if (moves >=7 && moves <= 12){
             return "Fie";
-        }if (moves >=20 && moves <= 26) {
+        }if (moves >=13 && moves <= 18) {
             return "Foe";
         } else return "Fum";
+
     }
 
 

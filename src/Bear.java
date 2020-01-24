@@ -15,6 +15,7 @@ public class Bear extends Critter {
     }
 
     public Color getColor() {
+        // Returns Black if polar is true and white if it is not.
 
         if (polar){
             return Color.BLACK;
